@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/faviconLogo.png" type="image/x-icon">
+    <title>Secret data saver</title>
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/51e0cc988f.js" crossorigin="anonymous"></script>
+
+  </head>
+<body>
+    <div class="container w-75 text-center mt-5">
+      <h1 class="text-info">Secret data saver</h1>
+        <div class="row ">
+
+        <div class="col-lg-6 col-sm-6">
+          <img src="images/registerImg.jpg" width="70%" height="100%" alt="">
+        </div>
+        <div class="col-lg-6 col-sm-6 bg-light">
+          <div class="">
+            <h1 class="text-info">Register</h1>
+          <form action="" id="forms" action="home.html" method="get" onsubmit="return register()">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="names" placeholder="Name" onkeyup="validName()">
+                <span id="name_error"></span>
+              </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="emails" placeholder="Email address" onkeyup="emailValidation()">
+              <span id="email_error"></span>
+
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" id="pass" placeholder="Password" onkeyup="passwordValidation()" >
+              <span id="password_error"></span>
+
+            </div>
+          
+            <button type="submit" class="btn btn-primary mb-3" onclick="">Register</button>
+            <span id="btn_error"></span>
+        </form>
+        
+        </div>
+      </div>
+      </div>
+     
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
